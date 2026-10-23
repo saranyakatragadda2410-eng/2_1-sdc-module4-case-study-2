@@ -1,0 +1,27 @@
+# Iris & Titanic ML Project
+
+A classification project using the Iris flower dataset and the Titanic survival dataset.
+
+## Datasets
+- `data/iris_50.csv` — 50 samples, 4 features, 3 classes (`setosa`, `versicolor`, `virginica`)
+- `data/titanic_50.csv` — 50 samples, 8 features, binary target `Survived`
+
+## Algorithms
+- Decision Tree
+- k-Nearest Neighbors (k-NN)
+- Random Forest (Iris)
+- Logistic Regression (Titanic)
+
+## Project Structure
+- `src/data_loader.py` — load datasets
+- `src/preprocessing.py` — cleaning, scaling, splitting
+- `src/feature_selection.py` — correlation & mutual information
+- `src/model_evaluation.py` — metrics & confusion matrix
+- `src/iris_classifier.py` — Iris pipeline
+- `src/titanic_classifier.py` — Titanic pipeline
+- `main.py` — runs both pipelines
+
+## How to Run
+```bash
+pip install -r requirements.txt
+python main.py
